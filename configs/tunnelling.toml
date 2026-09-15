@@ -1,0 +1,15 @@
+[simulation]
+name = "Rectangular Barrier Tunnelling"
+
+[barrier]
+height = 5.0
+width = 1.0
+
+[physics]
+mass = 1.0
+hbar = 1.0
+
+[scan]
+energy_min = 0.5
+energy_max = 10.0
+points = 200

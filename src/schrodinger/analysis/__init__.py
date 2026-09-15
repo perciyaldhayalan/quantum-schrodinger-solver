@@ -21,6 +21,13 @@ from schrodinger.analysis.normalization import (
     normalize_wavefunction,
     probability_norm,
 )
+from schrodinger.analysis.tunnelling import (
+    BarrierTransmissionResult,
+    propagation_wave_number,
+    rectangular_barrier_transmission,
+    transmission_scan,
+    tunnelling_decay_constant,
+)
 
 __all__ = [
     "ConvergenceResult",
@@ -36,4 +43,9 @@ __all__ = [
     "relative_errors",
     "satisfies_heisenberg",
     "state_overlap",
+    "BarrierTransmissionResult",
+"propagation_wave_number",
+"rectangular_barrier_transmission",
+"transmission_scan",
+"tunnelling_decay_constant",
 ]

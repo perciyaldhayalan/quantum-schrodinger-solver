@@ -1,4 +1,3 @@
-import numpy as np
 
 from schrodinger.analysis.diagnostics import (
     satisfies_heisenberg,

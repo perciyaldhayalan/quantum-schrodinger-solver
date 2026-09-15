@@ -1,0 +1,26 @@
+[simulation]
+name = "Free Gaussian Wavepacket Propagation"
+
+[grid]
+x_min = -30.0
+x_max = 30.0
+points = 3001
+
+[wavepacket]
+center = -10.0
+sigma = 1.5
+wave_number = 2.0
+
+[physics]
+mass = 1.0
+hbar = 1.0
+
+[time]
+dt = 0.001
+steps = 2000
+snapshot_interval = 250
+
+[validation]
+maximum_position_error = 0.005
+maximum_width_relative_error = 0.003
+maximum_norm_drift = 1e-9
