@@ -1,0 +1,17 @@
+[simulation]
+name = "Infinite Square Well Validation"
+
+[grid]
+x_min = 0.0
+x_max = 1.0
+points = 1001
+
+[physics]
+hbar = 1.0
+mass = 1.0
+
+[solver]
+states = 5
+
+[validation]
+relative_error_tolerance = 1.0e-4

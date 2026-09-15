@@ -1,0 +1,22 @@
+[simulation]
+name = "Infinite Square Well Grid Convergence"
+
+[grid]
+point_counts = [
+    100,
+    200,
+    400,
+    800,
+    1600,
+    3200
+]
+
+[physics]
+quantum_number = 1
+length = 1.0
+hbar = 1.0
+mass = 1.0
+
+[validation]
+expected_order = 2.0
+order_tolerance = 0.05
