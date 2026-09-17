@@ -1,6 +1,10 @@
 from schrodinger.time_dependent.crank_nicolson import (
     CrankNicolsonPropagator,
 )
+from schrodinger.time_dependent.momentum_space import (
+    MomentumDistribution,
+    momentum_distribution,
+)
 from schrodinger.time_dependent.propagation import (
     PropagationSnapshot,
     create_snapshot,
@@ -10,10 +14,16 @@ from schrodinger.time_dependent.propagation import (
     propagate_with_snapshots,
 )
 from schrodinger.time_dependent.scattering import (
+    AsymptoticScatteringResult,
     ScatteringProbabilities,
+    extract_asymptotic_scattering,
     rectangular_barrier_on_interior,
     region_probability,
     scattering_probabilities,
+)
+from schrodinger.time_dependent.tunnelling_validation import (
+    PacketTransmissionPrediction,
+    packet_averaged_transmission,
 )
 from schrodinger.time_dependent.wavepacket import (
     GaussianWavepacketParameters,
@@ -42,4 +52,10 @@ __all__ = [
 "rectangular_barrier_on_interior",
 "region_probability",
 "scattering_probabilities",
+"AsymptoticScatteringResult",
+"MomentumDistribution",
+"PacketTransmissionPrediction",
+"extract_asymptotic_scattering",
+"momentum_distribution",
+"packet_averaged_transmission",
 ]

@@ -1,0 +1,44 @@
+[simulation]
+name = "Quantum Tunnelling Parameter Study"
+
+[grid]
+x_min = -30.0
+x_max = 30.0
+points = 3001
+
+[wavepacket]
+center = -10.0
+sigma = 1.5
+wave_number = 2.0
+
+[physics]
+mass = 1.0
+hbar = 1.0
+
+[time]
+dt = 0.001
+steps = 10000
+
+[width_scan]
+barrier_height = 5.0
+values = [
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5
+]
+
+[height_scan]
+barrier_width = 1.0
+values = [
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    7.0
+]
+
+[validation]
+separation_tolerance = 1e-3
+probability_tolerance = 1e-8

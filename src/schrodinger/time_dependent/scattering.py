@@ -16,6 +16,15 @@ class ScatteringProbabilities:
     total: float
 
 
+@dataclass(frozen=True, slots=True)
+class AsymptoticScatteringResult:
+    reflection: float
+    transmission: float
+    barrier_probability: float
+    total_probability: float
+    separated: bool
+
+
 def region_probability(
     wavefunction: ArrayComplex,
     grid: Grid1D,
@@ -104,6 +113,42 @@ def scattering_probabilities(
         barrier=barrier_probability,
         right=right_probability,
         total=total,
+    )
+
+
+def extract_asymptotic_scattering(
+    wavefunction: ArrayComplex,
+    grid: Grid1D,
+    barrier_left: float,
+    barrier_right: float,
+    separation_tolerance: float = 1e-3,
+) -> AsymptoticScatteringResult:
+    if not np.isfinite(separation_tolerance):
+        raise ValueError(
+            "separation_tolerance must be finite."
+        )
+
+    if separation_tolerance <= 0.0:
+        raise ValueError(
+            "separation_tolerance must be positive."
+        )
+
+    probabilities = scattering_probabilities(
+        wavefunction=wavefunction,
+        grid=grid,
+        barrier_left=barrier_left,
+        barrier_right=barrier_right,
+    )
+
+    return AsymptoticScatteringResult(
+        reflection=probabilities.left,
+        transmission=probabilities.right,
+        barrier_probability=probabilities.barrier,
+        total_probability=probabilities.total,
+        separated=(
+            probabilities.barrier
+            < separation_tolerance
+        ),
     )
 
 

@@ -28,6 +28,10 @@ from schrodinger.analysis.tunnelling import (
     transmission_scan,
     tunnelling_decay_constant,
 )
+from schrodinger.analysis.tunnelling_study import (
+    TunnellingStudyResult,
+    run_tunnelling_study,
+)
 
 __all__ = [
     "ConvergenceResult",
@@ -48,4 +52,6 @@ __all__ = [
 "rectangular_barrier_transmission",
 "transmission_scan",
 "tunnelling_decay_constant",
+"TunnellingStudyResult",
+"run_tunnelling_study",
 ]

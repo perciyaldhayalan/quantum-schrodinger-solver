@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software in your work, please cite it using the metadata below."
+title: "Quantum Schrödinger Equation Solver"
+type: software
+authors:
+  
+    given-names: "Perciyal"
+version: 0.1.0
+date-released: 2026-09-17
+repository-code: "https://github.com/perciyaldhayalan/quantum-schrodinger-solver.git"
+url: "https://github.com/perciyaldhayalan/quantum-schrodinger-solver"
+license: MIT
+keywords:
+  - quantum mechanics
+  - Schrodinger equation
+  - computational physics
+  - numerical methods
+  - quantum tunnelling
+  - Crank-Nicolson
+  - finite differences
+  - scientific computing
+abstract: >-
+  A research-oriented computational physics project for solving and validating
+  the one-dimensional stationary and time-dependent Schrodinger equations.
+  The software implements sparse finite-difference Hamiltonians, stationary
+  eigensolvers, quantum observables, analytical and semi-analytical validation,
+  Crank-Nicolson wavepacket propagation, and quantitative rectangular-barrier
+  tunnelling studies comparing time-dependent simulations with
+  momentum-averaged stationary scattering theory.
