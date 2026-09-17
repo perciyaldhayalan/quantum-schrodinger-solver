@@ -3,8 +3,8 @@ message: "If you use this software in your work, please cite it using the metada
 title: "Quantum Schrödinger Equation Solver"
 type: software
 authors:
-  
-    given-names: "Perciyal"
+  - name: "Perciyal D"
+    website: "https://github.com/perciyaldhayalan/"
 version: 0.1.0
 date-released: 2026-09-17
 repository-code: "https://github.com/perciyaldhayalan/quantum-schrodinger-solver.git"

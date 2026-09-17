@@ -1,5 +1,10 @@
 # Quantum Schrödinger Equation Solver
 
+[![CI](https://github.com/perciyaldhayalan/quantum-schrodinger-solver/actions/workflows/ci.yml/badge.svg)](https://github.com/NoxiousTorpedo2230/quantum-schrodinger-solver/actions/workflows/ci.yml)
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Version](https://img.shields.io/badge/Version-0.1.0-blue)
+
 A research-oriented computational physics project for solving and validating the **one-dimensional Schrödinger equation** using numerical methods.
 
 The project combines sparse finite-difference eigenvalue calculations, analytical validation, quantum observables, Crank-Nicolson time propagation, Gaussian wavepacket dynamics, and quantitative quantum-tunnelling studies.
@@ -867,7 +872,7 @@ Python 3.13
 Clone the repository:
 
 ```bash
-git clone https://github.com/NoxiousTorpedo2230/quantum-schrodinger-solver.git
+git clone https://github.com/perciyaldhayalan/quantum-schrodinger-solver
 cd quantum-schrodinger-solver
 ```
 
@@ -1174,11 +1179,11 @@ for details.
 
 # Author
 
-**Moses Stephen Arulraj S**
+**Perciyal D**
 
 Computational Physics / Scientific Python Portfolio Project
 
-GitHub: [NoxiousTorpedo2230](https://github.com/NoxiousTorpedo2230)
+GitHub: [perciyaldhayalan](https://github.com/perciyaldhayalan/)
 
 ---
 

@@ -14,7 +14,6 @@ authors = [
     {name = "Perciyal D"}
 ]
 
-
 keywords = [
     "quantum-mechanics",
     "schrodinger-equation",
@@ -38,6 +37,10 @@ dependencies = [
     "matplotlib==3.11.1",
     "pandas==3.0.5"
 ]
+
+[project.urls]
+Homepage = "https://github.com/perciyaldhayalan/"
+Repository = "https://github.com/perciyaldhayalan/quantum-schrodinger-solver"
 
 [project.optional-dependencies]
 dev = [
